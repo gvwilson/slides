@@ -118,6 +118,9 @@
 	if (e.key === 'f') {
 	    doc.documentElement.requestFullscreen();
 	}
+	else if (e.key === 'o') {
+	    doc.body.classList.toggle('overview');
+	}
 	sessionStorage.setItem('body-class', doc.body.className);
     });
 
