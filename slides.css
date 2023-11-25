@@ -22,6 +22,27 @@
     background-color: #808080;
 }
 
+.overview {
+  font-size: 1em;
+}
+
+.overview .slide {
+  min-height: unset;
+  scroll-snap-align: unset;
+}
+
+.overview .slide-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.overview .slide-container .slide {
+  width: var(--slide-width);
+  border: 1px dotted #ccc;
+  margin-bottom: 0.5em;
+}
+
 html {
     scroll-snap-type: y mandatory;
 }
