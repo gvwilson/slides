@@ -64,9 +64,10 @@
 
     // Add page number to bottom right.
     function addPageNumber(slide, i, numSlides) {
-	const n = newElement('span', 'page-number');
-	n.innerText = `${i + 1}/${numSlides}`;
-	slide.append(n);
+	const pageNum = newElement('span', 'page-number');
+	pageNum.innerText = `${i + 1}/${numSlides}`;
+	pageNum.onclick = e => location.hash = i + 1; // ???
+	slide.append(pageNum);
     }
 
     // Apply slide attributes in <!--# --> comments.
