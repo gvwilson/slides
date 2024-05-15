@@ -19,7 +19,7 @@
 }
 
 .dark {
-    background-color: #808080;
+    background-color: #A0A0A0;
 }
 
 .overview {
@@ -41,6 +41,10 @@
   width: var(--slide-width);
   border: 1px dotted #ccc;
   margin-bottom: 0.5em;
+}
+
+.center {
+    text-align: center;
 }
 
 html {
