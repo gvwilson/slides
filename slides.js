@@ -81,8 +81,7 @@
     // Apply slide attributes in <!--# --> comments.
     function applyDirectives(slide) {
         const pattern = /[\s\n]class="([^"]+)"/;
-        for (let k in slide.childNodes) {
-            const node = slide.childNodes[k];
+        for (let node of slide.childNodes) {
             if (node.nodeType !== Node.COMMENT_NODE) {
                 continue;
             }
